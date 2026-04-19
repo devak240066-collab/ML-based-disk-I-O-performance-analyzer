@@ -1,0 +1,17 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY server/package*.json ./server/
+WORKDIR /app/server
+RUN npm install --only=production
+
+COPY server/. .
+
+ENV NODE_ENV=production
+ENV PORT=3001
+
+EXPOSE 3001
+
+CMD ["node", "index.js"]
+

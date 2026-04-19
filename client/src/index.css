@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #020202;
+}
+
+/* Scrollbars (matches the midnight theme) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020202;
+}
+::-webkit-scrollbar-thumb {
+  background: #18181b;
+  border-radius: 10px;
+  border: 2px solid #020202;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #27272a;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 4px;
+  background: #27272a;
+  border-radius: 5px;
+}
